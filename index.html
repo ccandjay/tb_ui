@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" size="16*16" href="img/icon.png" rel="apple-touch-icon-precomposed">
+    <link rel="stylesheet" href="css/new.css">
+    <title>仿淘宝</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+
+<body>
+    <!-- 返回顶部 -->
+    <div class="bar">
+        <div class="bar-a">
+            <i class="el-icon-s-comment"></i>
+            <p>消息</p>
+        </div>
+        <div class="bar-a">
+            <i class="el-icon-service"></i>
+            <p>官方客服</p>
+        </div>
+        <div class="bar-a">
+            <i class="el-icon-edit-outline"></i>
+            <p>反馈</p>
+        </div>
+        <div class="bar-a">
+            <i class="el-icon-warning"></i>
+            <p>举报</p>
+        </div>
+        <div class="bar-a span">
+            <i class="el-icon-upload2"></i>
+            <p>返回顶部</p>
+        </div>
+    </div>
+    <!-- 顶部导航栏 -->
+    <div id="topBar">
+        <div>
+            <div class="banxin">
+                <div class="box-left">
+                    <ul>
+                        <li> <span>中国大陆</span> <i class="el-icon-arrow-down"></i> </li>
+                        <!-- <div class="xiala">
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                            <p>中国香港</p>
+                        </div> -->
+                        <li> <span>亲,请登录</span> </li>
+                        <li> <span>免费注册</span> </li>
+                        <li> <span>手机逛淘宝 </span> </li>
+                        <li> <span>网页无障碍</span> </li>
+                    </ul>
+                </div>
+                <div class="box-right">
+                    <ul>
+                        <li> <span>千牛卖家中心</span> <i class="el-icon-arrow-down"></i> </li>
+                        <li> <span>联系客服</span> <i class="el-icon-arrow-down"></i> </li>
+                        <li> <i class="el-icon-s-goods"></i> <span>购 物 车</span> <i class="el-icon-arrow-down"></i>
+
+                        <li> <i class="el-icon-s-goods"></i> <span>收 藏 夹</span> <i class="el-icon-arrow-down"></i>
+                        </li>
+                        </li>
+                        <li> | </li>
+                        <li> <i class="el-icon-s-goods"></i> <span>收 藏 夹</span> <i class="el-icon-arrow-down"></i>
+                        </li>
+                        <li> <span>商品分类</span> </li>
+                        <li> <span>免费开店</span> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- 下拉选择框 -->
+        <!-- <div class="qianniu gongtong">
+            <p>开店入住</p>
+            <p>已卖出的宝贝</p>
+            <p>出售中的宝贝</p>
+            <p>卖家服务时</p>
+            <p>体验中心</p>
+            <p>卖家培训中心</p>
+            <p>电商学习中心</p>
+            <p>卖家服务市场</p>
+        </div>
+        <div class="kefu gongtong">
+            <p>消费者客服</p>
+            <p>卖家客服</p>
+            <p>意见反馈</p>
+            <p>网页版旺旺</p>
+        </div>
+        <div class="xlshoucang gongtong">
+            <p>收藏的店铺</p>
+            <p>收藏的宝贝</p>
+        </div>
+        <div class="itaobao gongtong">
+            <p>已买到的宝贝</p>
+            <p>我的足迹</p>
+        </div> -->
+    </div>
+
+    <!-- 头部搜索区 -->
+    <header>
+        <div id="search-box">
+            <div class="banxin">
+                <div class="logo">
+                    <img src="./img/logo.png" height="60" width="150" alt="">
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
+                    <div class="search">
+                        <span class="l">
+                            <div>宝贝 <i class="el-icon-arrow-down"></i></div>
+                        </span>
+                        <input type="text">
+                        <span class="sbtn">搜索</span>
+                    </div>
+
+                    <div class="con">
+                        <ul>
+                            <li> 新款连衣裙 </li>
+                            <li> 四件套 </li>
+                            <li> 潮流衣服 </li>
+                            <li> 时尚女鞋 </li>
+                            <li> 短裤 </li>
+                            <li> 半身群 </li>
+                            <li> 男士外套 </li>
+                            <li> 墙纸 </li>
+                            <li> 行车记录仪 </li>
+                            <li> 新款男鞋 </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二维码 -->
+                <div class="search-right">
+                    <span>下载淘宝</span>
+                    <img src="./img/下载.png" alt="二维码">
+                </div>
+                <!-- 搜索框下导航栏 -->
+
+            </div>
+
+
+
+        </div>
+    </header>
+
+    <!-- 分类栏和轮播图  -->
+    <div id="three">
+        <div class="shop-banxin">
+            <div class="box">
+                <!-- 分类栏 -->
+                <div class="category">
+                    <div class="nav">
+                        <p>分类</p>
+                        <ul>
+                            <li v-for="(item,index) in 8" :key="index" class="cur"> <i class="el-icon-user-solid"></i>
+                                <span class="text-under">女装</span> <span class="m-lr-8">/</span> <span
+                                    class="text-under">内衣</span>
+                                <span class="m-lr-8">/</span> <span class="text-under">奢侈品</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 右侧 -->
+                <div class="right-box">
+                    <div class="shop-r-top">
+                        <div> 天猫</div>
+                        <div> 聚划算</div>
+                        <div> 天猫</div>
+                        <div> 司法拍卖</div>
+                        <div> 飞猪旅行</div>
+                        <div> 天天特卖</div>
+                        <div> 极有家</div>
+                        <div> 淘宝直播 </div>
+                    </div>
+
+                    <div class="banner">
+                        <b class="left-btn"> <i class="el-icon-arrow-left"></i> </b>
+                        <b class="right-btn"> <i class="el-icon-arrow-right"></i> </b>
+                        <ul class="ul">
+                            <li> <img src="./img/lb5.jpg" alt=""> </li>
+                            <li> <img src="./img/lbt1.png" alt=""> </li>
+                            <li> <img src="./img/lbt2.png" alt=""> </li>
+                            <li> <img src="./img/lbt3.jpg" alt=""> </li>
+                            <li> <img src="./img/lbt4.jpg" alt=""> </li>
+                            <li> <img src="./img/lbt2.png" alt=""> </li>
+                        </ul>
+
+                        <ol class="ol">
+
+                        </ol>
+                    </div>
+
+                    <div class="geren">
+                        <div class="nihao">
+                            <img src="./img/toubiao.png_60x60.jpg" alt="">
+                            <p> <a href="#">Hi! 你好!请登录</a> </p>
+                        </div>
+                        <div class="but">
+                            <div>登录</div>
+                            <div>注册</div>
+                            <div>开店</div>
+                        </div>
+                        <div class="kang">
+                            <div class="shoucang">
+                                <div> <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <p>宝贝收藏</p>
+                                </div>
+                                <div> <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <p>宝贝收藏</p>
+                                </div>
+                                <div> <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <p>宝贝收藏</p>
+                                </div>
+                                <div> <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <p>宝贝收藏</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tiao">
+                            <div class="guize"> 热点</div>
+                            <div class="text">
+                                <p> 疫情影响发货 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="likes">
+                <h4>猜你喜欢</h4>
+                <img src="./img/O1CN016b1mMM1FxJlsXfWhU_!!6000000000553-2-tps-96-30.png" alt="">
+            </div>
+            <!-- 商品信息列表-->
+            <div class="recomment">
+                <div class="shop-info" v-for="(item,index) in shopList" :key="index">
+                    <div class="box2">
+                        <img :src="item.pUrl" alt="">
+                        <div class="wenben">
+                            <div class="title">
+                                <div style="height: 42px; overflow: hidden; margin-left: 10px;">
+                                    <img src="./img/hot.png" alt="">
+                                    <span>{{item.tit}}</span>
+                                </div>
+                                <p class="tag-item">送运费险</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <b>￥</b>
+                        <span>
+                            {{item.price}}
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 商品版心底部 -->
+            <div class="floor">
+                <div class="box3" v-for="i in 5">
+                    <div class="dione">
+                        <img src="./img/icon_f.png" alt="" width="50" height="50">
+                        <p class="ditwo"><span>规则和协议</span></p>
+                    </div>
+                    <ul>
+                        <li>新手专区</li>
+                        <li>24小时在线帮助</li>
+                        <li>免费开店</li>
+                        <li>退货退款流程</li>
+                        <li>淘宝规则</li>
+                        <li>免费开店</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#three',
+            data: {
+                shopList: [
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/shop3.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/p1.webp', tit: 'Apple/苹果 iPhone SE (第二代)苹果 iphonesse2小屏全网通4G手机', price: 2999.90 },
+                    { pUrl: './img/p2.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                    { pUrl: './img/p3.webp', tit: '【自营】小米/Redmi显示器21.45英寸 75Hz 低蓝光 支持VESA壁挂', price: 689.90 },
+                    { pUrl: './img/shop2.webp', tit: '玻璃杯水杯女可爱ins风杯子家用早餐杯啤酒杯牛奶咖啡杯男泡茶杯', price: 29.90 },
+                    { pUrl: './img/shop1.webp', tit: '美式休闲裤子男春秋高街潮牌男生抽绳束脚卫裤夏季垂感直筒运动裤', price: 69.80 },
+                ]
+            }
+        })
+
+
+        // 消息提示函数
+        let windowWidth = screen.width
+        window.onload = function () {
+            // 电脑屏幕为14寸及以下
+            if (windowWidth < 1200) {
+                if (confirm('检测到电脑屏幕尺寸小于16寸,这会使页面展示效果不佳,请将页面缩放到合适比例,展示效果更佳! ')) {
+                    alert("按住Ctrl后按  - (减号) 可调节浏览器缩放")
+                } else {
+                    console.log('如果屏幕尺寸小于16,展示效果不佳,请缩放浏览器页面!');
+                    console.log("按住Ctrl后按 '-'(减号)  可调节浏览器缩放");
+                }
+            }
+
+        }
+
+        function animate1(obj, time, callback) {
+            clearInterval(obj.timer)
+            obj.timer = setInterval(function () {
+                // 渐满的动画步长公式  (目标值-现在的位置)/10
+                var o = (time - window.pageYOffset) / 10
+                o = o > 0 ? Math.ceil(o) : Math.floor(o)
+                if (window.pageYOffset == time) {
+                    clearInterval(obj.timer)
+                    // 回调函数
+                    if (callback) {
+                        callback()
+                    }
+                }
+                window.scroll(0, window.pageYOffset + o);
+            }, 15)
+        };
+        var bar = document.querySelector('.bar')
+        var w1 = document.querySelector('.box-right')
+        var w = document.querySelector('.category')
+        var go = document.querySelector('.span')
+        var wTop = w1.offsetTop
+        console.log(wTop);
+        var barTop = bar.offsetTop - wTop
+        var wtop = w.offsetTop
+
+        // 注册页面滚动事件
+        addEventListener('scroll', function () {
+            //console.log(window.pageYOffset);//页面被卷去的头部
+            // 当页面被卷去200时,改为固定定位
+            if (window.pageYOffset >= wTop) {
+                bar.style.position = 'fixed'
+                bar.style.top = barTop + 'px'
+            } else {
+                bar.style.position = 'absolute'
+                bar.style.top = '210px'
+            }
+
+            if (window.pageYOffset >= wtop) {
+                go.style.display = 'block'
+            } else {
+                go.style.display = 'none'
+            }
+        });
+
+
+        // 点击返回顶部
+        go.addEventListener('click', function () {
+            animate1(window, 0)
+        })
+    </script>
+
+</body>
+
+</html>
